@@ -65,7 +65,9 @@ ROOT_URLCONF = 'cms.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/Users/Zhe/Documents/django_projects/templates'],
+        'DIRS': ['/Users/Zhe/Documents/django_projects/templates',
+                 '/home/zz921202/dj_projects/templates'
+                 ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -111,9 +113,8 @@ SITE_ID = 1
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = ('/Users/Zhe/study/',
+STATICFILES_DIRS = (
                     BASE_DIR,
-                    '/Users/Zhe/Documents/django_projects/tinymce/js/tinymce/'
                     )
 
 DELICIOUS_USER = "zz921202"
